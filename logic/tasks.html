@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Люблюрафаэлки</title>
+    <style>
+        #ball h2 {color: red; background: #90a2d3;}
+        #ball h3 {color: red; background: linear-gradient(#b0bbda,#5cd877);}
+        #hahapictures h2 {color: #228B22; background: #dd00c0; }
+        #hahapictures h3 {color: #228B22; background: linear-gradient(#ff8567,#f8ef71); }
+        #timetable h2 {color: #FF1493; background: #58caa0; }
+        #para h2 {color: #7CFC00; background: #c28a8a; }
+        #diary h2 {color: #000080; background: #ace6e3; }
+        #buch h2 {color: #6A5ACD; background: #89c5ae; }
+        img {
+            width:10vw;
+        }
+        .strong{
+            font-weight: bold;
+        }
+        .italic{
+            font-style: italic;
+        }
+        .strike{
+            text-decoration: line-through;
+        }
+        table, td{
+            border: 1px solid palevioletred
+        }
+        table{
+            border-collapse: collapse;
+            margin-left: 200px
+        }
+        td{
+            padding: 5px;
+        }
+
+        #wrapper {
+            font-size: 9px;
+        }
+        #wrapper table, #wrapper tr, #wrapper th, #wrapper td {
+            border: 1px black solid;
+            padding: 3px;
+        }
+        .vacation {
+            background-color: #b0bbda;
+        }
+    </style>
+</head>
+<body>
+    <script>
+    console.log('Hello world!');
+</script>
+<!-- Стиль внутри страницы -->
+<style>
+    body {
+        background: #e6fff6; 
+        color: #00005c;
+        font-family: cursive;
+      
+    }</style>
+    <h1>Моя первая страница</h1>
+    <div id="ball">
+        <h2 class="odd"> 
+            <strong>Мячик</strong><br></h2>
+            <h3>
+            <b>Наша Таня громко плачет:</b><br>
+            <i>Уронила в речку мячик.</i><br>
+            -Тише, Танечка, не плачь:<br>
+            <strike>Не утонет в речке мяч.</strike><br>
+            <i><b>Автор: А. Л. Барто</b></i><br>
+            </h3>
+
+        </h2>
+    </div>
+
+    <div id="ball1">
+        <h2 class="odd"> 
+            <strong>Мячик</strong><br>
+            <h3>
+            <span class="srong">Наша Таня громко плачет:</span><br>
+            <span class="italic">Уронила в речку мячик.</span><br>
+            <span> -Тише, Танечка, не плачь:</span><br>
+            <span class="strike">Не утонет в речке мяч.</span><br>
+            <span class="srong italic">Автор: А. Л. Барто</span><br>
+            </h3>
+
+        </h2>
+    </div>
+    <div id="hahapictures">
+        <h2 class="even">Весёлые картинки</h2>
+        <h3>
+        <img src="/img/e.jpg"><br>
+        <img src="/img/q.jpg"><br>
+        <img src="/img/r.jpg"><br>
+        <img src="/img/t.jpg"><br>
+        <img src="/img/w.jpg"><br>
+    </h3>
+    </div>
+    <div id="timetable">
+        <h2 class="odd">Расписание звонков</h2>
+        <ol>
+            <li>08:20 - 09:50</li>
+            <li>10:00 - 11:30</li>
+            <ul>
+                <li>Перемена 40 минут</li>
+            </ul>
+            <li>12:10 - 13:40</li>
+            <li>13:50 - 15:20</li> 
+            <li>15:30 - 17:00</li>
+            <ul>
+                <li>Перемена 20 минут</li>
+            </ul>
+            <li>17:20 - 18:50</li>
+            <li>19:00 - 20:30</li>
+        </ol>
+
+    </div>
+    <div id="para">
+        <h2 class="even">Расписание пар</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Номер пары</td>
+                    <td>Название предмета</td>
+                    <td>Аудитория</td>
+                    <td>Преподаватель</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Проектирование и автоматизация бизнес процессов</td>
+                    <td>217</td>
+                    <td>Деев О.А.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Проектирование и автоматизация бизнес процессов</td>
+                    <td>217</td>
+                    <td>Деев О.А.</td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+    <div id="diary">
+        <h2 class="odd">Дневник</h2>
+        <form action="" method="post">
+        <div>
+            <label for="fio">Фамилия, имя, отчество</label>
+        <input type="text" id="fio" value="Полежайкин Илья Семенович">
+        </div>
+        <div>
+        <p><b>Пол</b></p>
+        <p><input name="sex" type="radio" value="m">
+            Муж</p>
+        <p><input name="sex" type="radio" value="w" checked> 
+            Жен</p>
+        <p><input type="submit" value="Выбрать"></p><br>
+        </div>
+        <div>
+        <label for="school">Школа</label>
+        <input type="text" id="school" value="91">
+        </div>
+        <div>
+            <label for="local">Населённый пункт</label>
+            <input type="text" id="local" value="Ижевск">
+        </div>
+        <div>
+            <label for="class">Класс </label>
+            <input type="text" id="class" value="11A">
+        </div>
+        <div>
+            <label for="color">Цвет обложки</label>
+            <input type="color" id="color" value="#fddde6">
+        </div>
+        <div>
+            <label for="year">Учебный год</label>
+            <input type="year" id="year" value="2022">
+        </div>
+        <div>
+            <label for="email">Электронная почта</label>
+            <input type="email" id="email" value="hohoho@gmail.com">
+        </div>
+        <div>
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" value="88005553535">
+        </div>
+
+        <div>
+            <input type = "submit" id = "create" value="Создать">
+        </div>
+
+    </form>
+
+    </div>
+    <div id="buch">
+        <h2 class="even">Бухгалтерия</h2>
+        <div id = "wrapper"></div>
+    </div>
+
+    <div class="cat"></div>
+    <div id="father">
+        <div id="son"></div>
+    </div> 
+    <div id="father">
+        <div class="son0001"></div>
+        <div class="son0002"></div>
+    </div>
+
+    <div id="cats">Котики кругом</div>
+    <form action="" method="post">
+        <label for="login">Логин</label>
+        <input type="text" name="login" id="login">
+        <label for="password">Пароль</label>
+        <input type="password" name="password" id="password">
+        <button type="submit">Авторизоваться</button>
+    </form>
+    <form>
+        <p><b>Какое у вас состояние разума?</b></p>
+        <p><input name="dzen" type="radio" value="nedzen">
+            Не дзен</p>
+        <p><input name="dzen" type="radio" value="dzen"> Дзен</p>
+        <p><input name="dzen" type="radio" value="pdzen" checked>
+            Полный дзен</p>
+        <p><input type="submit" value="Выбрать"></p>
+        </form><br>
+        <select size="5" name="hero">
+            <option disabled>Выберите кафедру</option>
+            <option value="t1" selected>Дифференциальных уравнений</option>
+            <option value="t2">Алгебры и топологии</option>
+            <option value="t3">Математического анализа</option>
+            <option value="t4">Вычислительной механики</option>
+        </select><br>
+
+        <textarea name="text" id="text" cols="30" rows="10">
+            Пример текста
+        </textarea><br>
+    
+        <input type="text" Фамилия="name" value="Иван" >
+        <input type="password" Имя="surname" placeholder="Пароль">
+        <input type="color" Отчество ="color">
+
+<script>
+let employees = [
+{
+    "surname": 'Иванов', //Фамилия
+    "name": 'Иван', //Имя
+    "patronymic": 'Иванович', //Отчество 
+    "birthday": '1987-11-30', //Дата рождения в формате ГГГГ-ММ-ДД
+    "experience": 5, //Стаж работы
+    "salary": 48200, //Зарплата гросс в месяц
+    "salary13": 3000, //Годовая премия
+    "gender": 'm', //Премия
+    "vacation": 0, //Месяц отпуска
+},
+{
+    "surname": 'Петров', 
+    "name": 'Петр', 
+    "patronymic": 'Петрович', 
+    "birthday": '2001-01-01',
+    "experience": 0,
+    "salary": 27600,
+    "salary13": 1000,
+    "gender": 'm',
+    "vacation": 8,
+},
+{
+    "surname": 'Капустина', 
+    "name": 'Ирина', 
+    "patronymic": 'Николаевна', 
+    "birthday": '1992-02-02',
+    "experience": 4,
+    "salary": 36000,
+    "salary13": 4000,
+    "gender": 'f',
+    "vacation": 3,
+},
+{
+    "surname": 'Билл', 
+    "name": 'Гейтс', 
+    "patronymic": '', 
+    "birthday": '1955-10-28',
+    "experience": 1,
+    "salary": 16900,
+    "salary13": 100,
+    "gender": 'm',
+    "vacation": 11,
+},
+{
+    "surname": 'Ложкина', 
+    "name": 'Галина', 
+    "patronymic": 'Ильинична', 
+    "birthday": '2002-01-13',
+    "experience": 1,
+    "salary": 80000,
+    "salary13": 100000,
+    "gender": 'f',
+    "vacation": 6,
+},
+{
+    "surname": 'Матрос', 
+    "name": 'Капитолия', 
+    "patronymic": 'Владовна', 
+    "birthday": '1975-04-20',
+    "experience": 20,
+    "salary": 90000,
+    "salary13": 4000,
+    "gender": 'f',
+    "vacation": 7,
+},
+{
+    "surname": 'Елисейская', 
+    "name": 'Италия', 
+    "patronymic": 'Франсовна', 
+    "birthday": '1999-08-12',
+    "experience": 3,
+    "salary": 36700,
+    "salary13": 4000,
+    "gender": 'f',
+    "vacation": 4,
+},
+{
+    "surname": 'Строгая', 
+    "name": 'Лада', 
+    "patronymic": '', 
+    "birthday": '1990-08-15',
+    "experience": 7,
+    "salary": 69000,
+    "salary13": 3600,
+    "gender": 'f',
+    "vacation": 9,
+},
+{
+    "surname": 'Император', 
+    "name": 'Павел', 
+    "patronymic": 'Григорьевич', 
+    "birthday": '1970-12-19',
+    "experience": 7,
+    "salary": 28999,
+    "salary13": 3900,
+    "gender": 'm',
+    "vacation": 1,
+},
+{
+    "surname": 'Ватрушкин', 
+    "name": 'Петр', 
+    "patronymic": 'Семенович', 
+    "birthday": '2000-05-13',
+    "experience": 1,
+    "salary": 200000,
+    "salary13": 0,
+    "gender": 'm',
+    "vacation": 5,
+},
+];
+
+function calculateNetSalary(salary){
+    return +(salary*1.15*.87).toFixed(2);
+}
+
+function calculateYearSalary(salary,salary13){
+    return +(12*salary + .87*salary13).toFixed(2);
+}
+
+function calculateTaxReturn(yearSalary){
+    return Math.round(.13*yearSalary);
+}
+
+function calculateNewSalary(salary){
+    return +(1.078*salary).toFixed(2);
+}
+
+function calculateAge(birthday){
+    let today = new Date();
+    let age = new Date(birthday);
+    let year = today.getFullYear() - age.getFullYear();
+    let month = today.getMonth() - age.getMonth();
+    if (month < 0){
+        month += 12;
+        year -= 1;
+    }
+    return [year, month];
+
+}
+function remainsToPension(gender, age){
+    const [year, month] = age;
+    const months = gender === 'm' ? 64*12 : 59*12;
+    const remainsMonth = months - year*12 + month;
+    if (remainsMonth < 0) return [null,null];
+    if (remainsMonth %12 === 0) return [remainsMonth/12,0];
+
+    return [Math.floor(remainsMonth/12), 12 - remainsMonth % 12];
+
+}
+
+function newFormatOfBirthday(birthday, months){
+    const tempDate = new Date(birthday);
+    return `${tempDate.getDate()}.${months[tempDate.getMonth()][1]}.${tempDate.getFullYear()}`;
+}
+
+function ageCase (age){
+    if (age%10 === 1 && age%100 !== 11){
+        return 'год';
+    }
+    if (
+        age%10 === 2 || age%10 === 3 ||age%10 === 4 &&
+        age%100 !== 12 || age%100 !== 13 ||age%100 !== 14
+        )
+        {
+        return 'лет';
+    }
+}
+
+const months = [
+    ['Январь', 'января'],
+    ['Февраль', 'февраля'],
+    ['Март', 'марта'],
+    ['Апрель', 'апреля'],
+    ['Май', 'мая'],
+    ['Июнь', 'июня'],
+    ['Июль', 'июля'],
+    ['Август', 'августа'],
+    ['Сентябрь', 'сентября'],
+    ['Октябрь', 'октября'],
+    ['Ноябрь', 'ноября'],
+    ['Декабрь', 'декабря']
+]
+
+let table = `<table><thead>
+    <tr>
+        <th>№</th>
+        <th>ФИО</th>
+        <th>Дата рождения</th>
+        <th>Возраст</th>
+        <th>Зарплата гросс.</th>
+    `;
+
+    for (let i=0; i<12; i++){
+        table +- `<th>${months[i][0]}</th>`;
+    }
+
+    table +- `<th>Зарплата в ${new Date().getFullYear()+1}</th>
+    <th>Общий доход</th>
+    <th>К вычету</th>
+    <th>Остаток до пенсии</th> 
+    </tr>
+    </thead>
+    <tbody>
+    `;
+
+   const rub = "&#x20bd";
+
+
+for (let i in employees){
+    item = employees[i];
+    [ageYear, ageMonth] = calculateAge(item.birthday);
+    [rtpYear,rtpMonth]=remainsToPension(item.gender, [ageYear,ageMonth]);
+    table += `<tr>
+        <td>${+i+1}</td>
+        <td>${item.surname} ${item.name} ${item.patronymic}</td>
+        <td>${newFormatOfBirthday(item.birthday,months)}</td>
+        <td>${ageYear}${ageCase(ageYear)}</td>
+        <td>${item.salary}${rub}</td>`;
+
+        let ys = calculateYearSalary(item.salary, item.salary13);
+
+        for (let j=0;j<11;j++) {
+            table += `<td ${j==item.vacation ? 'class=vacation': ' '}>${calculateNetSalary(item.salary)}${rub}</td>`;
+        }
+        table += `<td ${11==item.vacation ? 'class=vacation': ' '}>${calculateNetSalary(item.salary)+calculateNetSalary(item.salary13)}${rub}</td>;
+        <td>${calculateNewSalary(item.salary)}${rub}</td>
+        <td>${ys}${rub}</td>;
+        <td>${calculateTaxReturn(ys)}${rub}</td>
+        <td>${rtpYear !== null ? (rtpYear+ageCase(rtpYear)): "Уже на пенсии"}</td>`;
+
+        table += `</tr>`; 
+
+
+    
+}
+for (item of employees){
+const netSalary = calculateNetSalary(item.salary);
+    const yearSalary = calculateYearSalary(netSalary, item.salary13);
+    const taxReturn = calculateTaxReturn(yearSalary);
+    const newSalary = calculateNewSalary(item.salary);
+    const age = calculateAge(item.birthday);
+    const remains = remainsToPension(item.gender, age);
+    const formatOfBirthday = newFormatOfBirthday(item.birthday, months);
+    console.log(item.surname, netSalary, yearSalary, taxReturn, newSalary, age, remains, formatOfBirthday);
+}
+
+table += `</tbody></table>`;
+window.onload = () => {
+    document.querySelector("#wrapper").innerHTML = table;
+
+    document.querySelector("#create").onclick = (e) => {
+        e.preventDefault();
+        let newWin = window.open("about:blank","Дневник","width=420,height=594");
+        let template = `
+        <style>
+            body {
+                margin-top: 100px;
+                text-align: center;
+                font-size: large;
+                background-color: ${document.querySelector("#color").value};
+            }
+            .contact {
+                margin-top: 50px;
+            }
+</style>
+        <h1>Дневник</h1>
+        <div>Учени${document.querySelector('[name = "sex"]:checked').value == "m" ? "ка" : "цы"} ${document.querySelector("#class").value}   класса</div>
+        <div>школы №${document.querySelector("#school").value}, город ${document.querySelector("#local").value}</div>
+        <div>${document.querySelector("#fio").value}</div>
+        <div>${document.querySelector("#year").value}/${+document.querySelector("#year").value+1} учебный год</div>
+        <div class='contact'> ${document.querySelector("#email").value}, ${document.querySelector("#phone").value}</div>        `;
+        newWin.document.write(template);
+    }
+}
+
+                     
+</script>
+
+
+</body>
+</html>

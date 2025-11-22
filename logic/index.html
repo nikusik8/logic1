@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/solarized.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<style>
+		#ror_ditz{
+			font-size: 75%;
+		}	
+		h3{
+			color: rgba(0, 9, 128, 0.568) !important;
+			border: 1px dotted rgba(94, 81, 139, 0.596);
+			padding: 5px;
+			background-color: azure;
+			border-radius: 10px;
+		}
+		</style>
+		
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="center">
+					<h1>Инвестиции</h1>
+				</section>
+				<section class="center">
+					<h2>Определения</h2>
+				</section>
+				<section data-markdown="markdown/invest.md"></section>
+				<section data-markdown="markdown/traiding.md"></section>
+
+				<section data-markdown="markdown/market.md"></section>
+
+				<section data-markdown="markdown/exchange.md"></section>
+
+				<section data-markdown="markdown/broker.md"></section>
+
+				<section data-markdown="markdown/security_paper.md"></section>
+
+				<section data-markdown="markdown/types.md"></section>
+
+				<section data-markdown="markdown/investment_portfolio.md"></section>
+				<section data-markdown="markdown/diversification.md"></section>
+				<section data-markdown="markdown/spread.md"></section>
+				<section data-markdown="markdown/bull_and_bear.md"></section>
+				<section data-markdown="markdown/bull.md"></section>
+				<section data-markdown="markdown/bear.md"></section>
+				<section data-markdown="markdown/flat.md"></section>
+				
+				<section class="center">
+					<h2>Доходность</h2>
+				</section>
+				<section>
+				<section data-markdown id="ror_ditz">
+					<script type="text/template">
+						### Доходность по методу Дитца
+- $R$ - доходность портфеля в процентах (rate of return)
+- $S_e$ - стоимость портфеля на конец периода (end of the period)
+- $S_b$ - стоимость портфеля на начало периода (begin of the period)
+- $S_a$ - пополнения счёта (account refill) 
+- $S_w$ - пополнения счёта (withdrawal from the account) 
+- $W_t$ - временной весовой коэффициент, который применяет к каждому денежному потоку в портфеле (time)
+- $T$ - длительность отчетного периода в днях, за котрых считается доходность 
+- $t$ - количество дней, котрое прошло с момента начала инвестирования
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						### Доходность по методу Дитца
+						$$
+						W_t=\dfrac{T-t}{T}
+						$$
+						$$ 
+						R=\dfrac{S_e-S_b-\sum{S_a}+\sum{S_w}}{S_b+\sum{(S_aW_t)}-\sum{(S_wW_t)}}
+						$$
+					</script>
+				</section>
+			</section>
+
+			<section data-fullsreen data-menu-title="Программа доходности по Дитцу">
+				<iframe data-src="html/ror.html" class="stretch">
+				</iframe>
+			</section>
+
+			<section class="center">
+				<h2>Графики</h2>
+			</section>
+
+			<section>
+				<h3>Линейный график</h3>
+				<p>Линейный график показывает только цену на момент закрытия торгов.</p>
+			</section>
+
+			<section data-fullsreen data-menu-title="Линейный график">
+				<iframe data-src="html/line.html" class="stretch">
+				</iframe>
+			</section>
+
+			<section data-markdown="markdown/candlestick.md"></section>
+
+			<section data-fullsreen data-menu-title="Свечной график">
+				<iframe data-src="html/candlestick.html" class="stretch">
+				</iframe>
+			</section>
+
+			<section>
+				<h3>Смешной котик</h3>
+					<img src="img/смешной котик в плохом качестве.jpg" alt="Смешной котик" height="400px">
+				
+			</section>
+
+			<section data-background-image="img/вертикальный котик.jpg"
+			data-background-size="contain"
+			data-menu-title="Черный">
+
+		</section>
+
+		<section data-background-image="img/милый кот в хорошем качестве.jpg"
+			data-menu-title="Милашка">
+			<h3>Милый буба</h3>
+		</section>
+
+		<section class="center"
+		data-menu-title="Заключительный слайд">
+			<p>Спасибо за внимание!</p>
+		</section>
+
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                center: false,
+				dependencies: [
+					{
+						src: `plugin/katex/katex.js`,
+						async: true,
+					},
+					{
+						src: `plugin/menu/menu.js`,
+					},
+					{
+						src: `plugin/fullscreen/fullsreen.js`,
+					},
+				],
+				menu: {
+					numbers: true,
+					markers: true,
+				},
+				slideNumber: true,
+				controls: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
